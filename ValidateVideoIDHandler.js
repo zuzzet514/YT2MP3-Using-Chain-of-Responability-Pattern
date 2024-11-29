@@ -1,6 +1,6 @@
 const Handler = require("./Handler");
 
-class ValidateVideoIDHandler {
+class ValidateVideoIDHandler extends Handler{
 
     async handle(videoId) {
         if (videoId.length !== 11) {

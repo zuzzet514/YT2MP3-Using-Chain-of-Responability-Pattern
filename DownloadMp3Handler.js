@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const os = require("os");
 
-class DownloadMp3Handler {
+class DownloadMp3Handler extends Handler{
 
 }
 

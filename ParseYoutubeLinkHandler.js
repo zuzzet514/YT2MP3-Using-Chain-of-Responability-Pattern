@@ -1,6 +1,6 @@
 const Handler = require("./Handler");
 
-class ParseYoutubeLinkHandler {
+class ParseYoutubeLinkHandler extends Handler{
     async handle(input) {
 
         console.log("Getting YT link");

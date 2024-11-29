@@ -3,7 +3,7 @@ const fetch = require("node-fetch");
 
 // https://youtube-mp36.p.rapidapi.com/dl?id=${videoId}
 
-class FetchMp3DataHandler {
+class FetchMp3DataHandler extends Handler{
 
 }
 
