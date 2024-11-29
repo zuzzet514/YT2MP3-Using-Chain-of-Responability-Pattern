@@ -3,6 +3,8 @@ const Handler = require("./Handler");
 class ParseYoutubeLinkHandler {
     async handle(input) {
 
+        console.log("Getting YT link");
+
         const videoIdMatch = input.match(/(?:\?v=|&v=|youtu\.be\/|youtube\.com\/embed\/)([^&\s]+)/);
         const videoId = videoIdMatch ? videoIdMatch[1] : input.trim();
 
