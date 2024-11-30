@@ -10,3 +10,28 @@ const validateVideoIDHandler = new ValidateVideoIDHandler();
 const fetchHandler = new FetchMp3DataHandler();
 const downloadHandler = new DownloadMp3Handler();
 
+parseLinkHandler
+    .setNext(validateVideoIDHandler)
+    .setNext(fetchHandler)
+    .setNext(downloadHandler)
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+})
+
+console.log("Enter a yt video link")
+
+rl.on("line", async (input) => {
+    await parseLinkHandler.handle(input);
+    rl.close()
+})
+
+
+
+
+
+
+
+
+
